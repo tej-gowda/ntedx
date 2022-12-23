@@ -1,0 +1,326 @@
+/* https://codepen.io/DuskoStamenic/pen/ZEvBKdw */
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+
+body {
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/*nav bar*/
+
+.navbar {
+  position: fixed;
+  transition: 1s;
+  justify-content: left;
+}
+
+/*.navbar-brand{
+
+  font-size: 45px;
+  justify-content:flex-start;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+}*/
+.icon-bar {
+  background-color: #000;
+}
+
+.logo {
+
+  margin-left: 10px;
+  margin-right: ;
+  display: block;
+  float: left;
+  width: 132px;
+  height: 90px;
+  justify-content: ;
+}
+
+
+.nav {
+  font-family: Lithos Pro;
+  color: #fff;
+  padding: 0px 0px;
+  display: inline;
+  float: right;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+
+
+}
+
+.nav li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+
+
+}
+
+.nav li:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #38fd07;
+  transform: scaleX(0);
+  transition: .2s ease-in-out;
+}
+
+.nav li:hover:after {
+  transform: scaleX(1);
+}
+
+
+.bcontainer {
+  min-height: 500px;
+}
+
+.bcontainer h3 {
+  text-align: center;
+  margin-top: 5%;
+  color: #fff;
+  font-family: nyala;
+  font-size: 44px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5);
+  background: #501e27;
+}
+
+@media(max-width: 720px) {
+  body {
+    background-size: 100% 100%;
+  }
+
+  .navbar-collapse {
+    background: #501e27;
+  }
+
+  .bcontainer {
+    min-height: 800px;
+  }
+}
+
+
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  justify-content: center;
+}
+
+.parallax-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+  outline-width: inherit;
+  background-image: url(https://img.freepik.com/free-vector/abstract-red-light-with-hexagon-background_136469-261.jpg?size=626&ext=jpg);
+  
+  background-position: center;
+  background-size: cover;
+  color: var(--color);
+  row-gap: 4rem;
+
+  text-align: center;
+}
+
+.buffer {
+  color: white;
+  width: 100%;
+  min-height: 30vh;
+  justify-content: center;
+  background-image: url(https://static1.squarespace.com/static/5a7d755a18b27d5c72ee1048/t/5a84af17e4966b15dd8926bd/1518645016760/TEDx_backgrounds-02.png);
+}
+
+.parallax-container2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 6rem 0;
+  background-image: url(https://ireland.asentiv.com/wp-content/uploads/sites/12/2018/10/Asentiv-Irl-Blog-TED-X-01-800x500.jpg);
+  gap: 1.6em;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+p {
+  max-width: 52ch;
+  padding: 1em;
+  line-height: 1.5;
+}
+
+a {
+  display: inline-block;
+  padding: -1em 3.5em;
+  border-radius: 0.3em;
+  background-color: var(--color);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 1em;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0px;
+  overflow-wrap: break-word;
+  background: scroll;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+
+
+/*new*/
+.bcontainer {
+
+  justify-content: center;
+  background: none;
+
+  position: relative;
+  transition: 0.5s;
+}
+
+.our-team {
+  border-radius: 15px;
+  text-align: center;
+  padding: 2px 22px 16px;
+  /* background: #fff;
+     color: white;
+     background-color: white;*/
+  margin: 14px;
+  box-shadow: 10px 10px 15px #1d1b1b, -10px -10px 15px #fff;
+  background-color: grey;
+  opacity: 0.9;
+
+}
+
+.meet-team {
+  /* background-color: #dddbdb;*/
+  margin-bottom: 0;
+  width: auto;
+  font-family: 'Rubik Spray Paint', cursive;
+  color: rgb(239, 125, 12);
+  background-attachment: fixed;
+
+}
+
+.our-team .pic {
+  /* background:white;*/
+  padding: 30px;
+  margin-bottom: 45px;
+  display: inline-block;
+  width: 100%;
+  height: 80%;
+  transition: all 0.5s ease 0s;
+  backface-visibility: hidden;
+}
+
+.pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.our-team .title {
+  font-weight: 600;
+  color: #2e282a;
+  text-transform: uppercase;
+  display: block;
+  font-size: 20px;
+  margin: 0 0 7px 0;
+}
+
+.our-team .post {
+  color: rgb(56, 53, 53);
+  text-transform: capitalize;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.our-team .social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.our-team .social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.our-team .social li a {
+  font-size: 15px;
+  color: rgb(14, 14, 14);
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-image: initial;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social li a {
+  background: rgb(250, 247, 247);
+  /*color: #fff;*/
+  color: rgb(9, 9, 9);
+}
+
+.our-team:hover .pic {
+  transform: scale(1.2);
+  border-radius: 50%;
+}
+
+.row {
+  margin: 2px;
+  justify-content: center;
+}
+
+.about {
+  color: rgb(12, 12, 12);
+  text-align: center;
+  text-decoration: underline;
+  background-color: #d5d0d0;
+  padding: 2px 2px 2px 2px;
+  font-family: 'Rubik Spray Paint', cursive;
+  opacity: 0.5;
+}
